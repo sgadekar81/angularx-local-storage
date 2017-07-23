@@ -1,0 +1,26 @@
+{
+  "name": "angularx-local-storage",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "transpile": "ngc",
+    "package": "rollup -c",
+    "minify": "uglifyjs dist/bundles/angularx-local-storage.umd.js --screw-ie8 --compress --mangle --comments --output dist/bundles/angularx-local-storage.umd.js",
+    "build": "npm run transpile && npm run package && npm run minify"
+  },
+  "author": "sandman81",
+  "license": "ISC",
+  "dependencies": {
+    "@angular/common": "4.1.3",
+    "@angular/compiler": "4.1.3",
+    "@angular/compiler-cli": "4.1.3",
+    "@angular/core": "4.1.3",
+    "@angular/forms": "4.1.3",
+    "rxjs": "5.4.0",
+    "zone.js": "0.8.12",
+    "rollup": "^0.43.0",
+    "typescript": "^2.4.1",
+    "uglify-js": "^3.0.21"
+  }
+}

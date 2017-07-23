@@ -1,0 +1,1 @@
+{"version":3,"sources":["../index.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,oBAAoB,EAAE,MAAS,uBAAuB,CAAC","file":"index.js","sourceRoot":"","sourcesContent":["export { AngularxLocalStorage }    from './localStorage.module';"]}
