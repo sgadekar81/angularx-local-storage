@@ -1,7 +1,7 @@
 {
   "name": "angularx-local-storage",
-  "version": "0.0.2",
-  "description": "",
+  "version": "0.0.3",
+  "description": "helper module for html 5 local storage in angularx",
   "main": "index.js",
   "author": "sandman81",
   "license": "MIT",
