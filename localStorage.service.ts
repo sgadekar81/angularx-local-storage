@@ -12,7 +12,7 @@ export class LocalStorage {
         return typeof(Storage) !== "undefined" ? true : false;
     }
     lsStoreItem(key:any,val:any){
-        this.lsSupport() ? localStorage.setItem(key, val) : this.lsNotSupp();
+        this.lsSupport() ? localStorage.setItem(key, JSON.stringify(val)) : this.lsNotSupp();
     }
     lsRemoveItem(key:any){
         this.lsSupport() ? localStorage.removeItem(key) : this.lsNotSupp();
@@ -22,7 +22,7 @@ export class LocalStorage {
         this.lsSupport() ? localStorage.clear() : this.lsNotSupp();
     }
     lsGetItem(key:any){
-        return localStorage[key]
+        return JSON.parse(localStorage[key]);
     }
     getLs(){
         return localStorage;
